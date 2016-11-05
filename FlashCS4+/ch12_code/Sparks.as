@@ -1,0 +1,1 @@
+﻿package{	import flash.display.Sprite;	import flash.filters.GlowFilter;			public class Sparks extends Sprite{		public function Sparks():void{			init();		}		private function init():void{  			var sprite:Sprite = new Sprite();			addChild(sprite);			var mover:SparksMover=new SparksMover(sprite);					mover.startTime();						filters = [new GlowFilter()];		}	}}

@@ -1,0 +1,1 @@
+﻿package{	import flash.display.Sprite;	import flash.filters.BlurFilter;	public class Smoke extends Sprite{		public function Smoke():void{			init();		}		private function init():void{  			var sprite:Sprite = new Sprite();			addChild(sprite);						 			var mover:SmokeMover=new SmokeMover(sprite);					mover.startTime();						filters = [new BlurFilter(8,8,2)];		}	}}

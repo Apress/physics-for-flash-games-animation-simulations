@@ -1,0 +1,1 @@
+﻿package{	import flash.display.Sprite;	public class ParticleEmitterExample extends Sprite{		public function ParticleEmitterExample():void{			init();		}		private function init():void{  			var sprite:Sprite = new Sprite();			addChild(sprite);			 			var mover:ParticleEmitter = new ParticleEmitter(sprite);					mover.startTime();		}	}}

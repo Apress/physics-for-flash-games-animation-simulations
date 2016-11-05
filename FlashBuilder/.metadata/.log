@@ -1,0 +1,456 @@
+!SESSION 2011-09-24 01:39:38.554 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/om/Documents/FlashBuilderAS3Book
+
+!ENTRY org.eclipse.core.resources 4 2 2011-09-24 01:55:54.041
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error reading persistence file L/BouncingBall/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.readPersistenceFile(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.<init>(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.justCreateDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.createDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.refreshProjectSettings(Unknown Source)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$ProjectSettingsFileChangedVisitor.visit(Unknown Source)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$1.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:282)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:276)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:311)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1018)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1416)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:331)
+	... 19 more
+
+!ENTRY org.eclipse.core.resources 4 1 2011-09-24 01:55:54.128
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2011-09-24 01:55:54.128
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:733)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:714)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1420)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:141)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2011-09-24 01:55:54.129
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2011-09-24 01:55:54.129
+!MESSAGE The project description file (.project) for 'BouncingBall' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.ui.workbench 4 0 2011-09-24 02:27:32.815
+!MESSAGE WARNING: Prevented recursive attempt to activate part com.adobe.flexbuilder.navigator while still in the middle of activating part com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part com.adobe.flexbuilder.navigator while still in the middle of activating part com.adobe.flexbuilder.editors.actionscript.ActionScriptEditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3352)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1495)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1519)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1500)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1282)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2672)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:981)
+	at org.eclipse.swt.widgets.Decorations.restoreFocus(Decorations.java:412)
+	at org.eclipse.swt.widgets.Shell.kEventWindowActivated(Shell.java:902)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:1961)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4004)
+	at org.eclipse.swt.internal.carbon.OS.DisposeWindow(Native Method)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:582)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:1375)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:661)
+	at org.eclipse.jface.window.Window.close(Window.java:330)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:971)
+	at org.eclipse.jface.dialogs.MessageDialog.buttonPressed(MessageDialog.java:167)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:616)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:227)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1495)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1519)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1504)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1295)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3350)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2954)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.jface.dialogs.MessageDialog.openQuestion(MessageDialog.java:371)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4425)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4555)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4533)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:921)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:879)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:611)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2748)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2651)
+	at org.eclipse.ui.internal.WorkbenchPage.access$13(WorkbenchPage.java:2643)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2595)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2590)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2574)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2565)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:644)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:603)
+	at org.eclipse.ui.actions.OpenFileAction.openFile(OpenFileAction.java:98)
+	at org.eclipse.ui.actions.OpenSystemEditorAction.run(OpenSystemEditorAction.java:98)
+	at org.eclipse.ui.views.navigator.OpenActionGroup.runDefaultAction(OpenActionGroup.java:125)
+	at org.eclipse.ui.views.navigator.MainActionGroup.runDefaultAction(MainActionGroup.java:328)
+	at org.eclipse.ui.views.navigator.ResourceNavigator.handleOpen(ResourceNavigator.java:690)
+	at org.eclipse.ui.views.navigator.ResourceNavigator$6.open(ResourceNavigator.java:433)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:820)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:46)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:199)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:818)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1079)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1183)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:263)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:257)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:297)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1495)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1519)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1504)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1295)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3350)
+	at org.eclipse.swt.widgets.Control.sendTrackEvents(Control.java:2734)
+	at org.eclipse.swt.widgets.Control.kEventControlTrack(Control.java:1953)
+	at org.eclipse.swt.widgets.Widget.controlProc(Widget.java:367)
+	at org.eclipse.swt.widgets.Display.controlProc(Display.java:835)
+	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
+	at org.eclipse.swt.widgets.Tree.kEventMouseDown(Tree.java:2363)
+	at org.eclipse.swt.widgets.Widget.mouseProc(Widget.java:1262)
+	at org.eclipse.swt.widgets.Display.mouseProc(Display.java:2819)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2938)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlexBuilderApplication.start(FlexBuilderApplication.java:112)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:592)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.core.resources 4 2 2011-09-24 02:41:42.875
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error reading persistence file L/BouncingBall/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.readPersistenceFile(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.<init>(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.justCreateDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.createDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.refreshProjectSettings(Unknown Source)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$ProjectSettingsFileChangedVisitor.visit(Unknown Source)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$1.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:282)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:276)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:311)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1018)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1416)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:331)
+	... 19 more
+
+!ENTRY org.eclipse.core.resources 4 1 2011-09-24 02:41:42.916
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2011-09-24 02:41:42.916
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:733)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:714)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1420)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:141)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2011-09-24 02:41:42.916
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2011-09-24 02:41:42.916
+!MESSAGE The project description file (.project) for 'BouncingBall' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 2 2011-09-24 02:46:30.029
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error reading persistence file L/BouncingBall/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.readPersistenceFile(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.<init>(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.justCreateDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.createDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.refreshProjectSettings(Unknown Source)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$ProjectSettingsFileChangedVisitor.visit(Unknown Source)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$1.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:282)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:276)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:311)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1018)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1416)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:331)
+	... 19 more
+
+!ENTRY org.eclipse.core.resources 4 1 2011-09-24 02:46:30.062
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2011-09-24 02:46:30.062
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:733)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:714)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1420)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:141)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2011-09-24 02:46:30.062
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2011-09-24 02:46:30.062
+!MESSAGE The project description file (.project) for 'BouncingBall' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2011-09-24 04:55:56.815 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-24 04:56:06.461
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-09-24 05:01:00.642 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/om/Documents/FlashBuilderAS3Book
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-24 05:01:05.664
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-09-24 05:02:43.146 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-24 05:02:48.174
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-09-24 05:09:07.340 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-24 05:09:12.322
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 4 2 2011-09-25 03:25:57.018
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error reading persistence file L/ch7_FloatingBall/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.readPersistenceFile(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.<init>(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.justCreateDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.createDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.refreshProjectSettings(Unknown Source)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$ProjectSettingsFileChangedVisitor.visit(Unknown Source)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$1.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:282)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:276)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:311)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1018)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1416)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:331)
+	... 19 more
+
+!ENTRY org.eclipse.core.resources 4 1 2011-09-25 03:25:57.232
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2011-09-25 03:25:57.232
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:736)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:717)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1420)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:141)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2011-09-25 03:25:57.233
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2011-09-25 03:25:57.233
+!MESSAGE The project description file (.project) for 'ch7_FloatingBall' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.resources 4 2 2011-09-25 03:26:50.830
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+com.adobe.flexbuilder.project.persist.PersistenceException: Error reading persistence file L/ch7_FloatingBall/.actionScriptProperties
+	at com.adobe.flexbuilder.project.persist.PersistableSettings.readPersistenceFile(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProjectSettings.<init>(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.justCreateDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.createDescription(Unknown Source)
+	at com.adobe.flexbuilder.project.actionscript.internal.ActionScriptProject.refreshProjectSettings(Unknown Source)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$ProjectSettingsFileChangedVisitor.visit(Unknown Source)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:76)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore$1.resourceChanged(Unknown Source)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:282)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:276)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:311)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1018)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:45)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: The resource tree is locked for modifications.
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:115)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:1744)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1416)
+	at org.eclipse.core.internal.resources.File.refreshLocal(File.java:331)
+	... 19 more
+!SESSION 2011-09-27 01:11:26.134 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-09-27 01:11:30.015
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2011-09-27 01:11:48.555
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-01 01:10:41.077 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-10-01 01:10:44.427
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-01 01:10:56.271
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-01 03:24:21.108 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-01 03:24:34.639
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-02 09:36:42.469 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-10-02 09:36:44.563
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-02 09:36:59.182
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-03 15:07:29.601 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-03 15:07:56.766
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2011-10-13 16:41:25.090 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_26
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Command-line arguments:  -os macosx -ws carbon -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-10-13 16:41:31.490
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2011-10-13 16:42:06.856
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="com.adobe.flexbuilder.editors.common.last.project.parent" value="/Users/om/Documents/FlashBuilderAS3Book/ch16/solar_system"/>
+	<item key="com.adobe.flexbuilder.editors.common.use.default.location" value="false"/>
+	<section name="com.adobe.flexbuilder.help.ModulesPropertyPage">
+		<item key="sortColumnIndex" value="0"/>
+		<item key="outputSWFColumnWidth" value="125"/>
+		<item key="optimizeColumnWidth" value="125"/>
+		<item key="moduleColumnWidth" value="225"/>
+		<item key="sortColumnAscending" value="true"/>
+	</section>
+	<section name="ExportWizard">
+	</section>
+</section>

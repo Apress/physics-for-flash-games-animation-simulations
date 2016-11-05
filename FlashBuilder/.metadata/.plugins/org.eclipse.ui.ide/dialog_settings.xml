@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.adobe.coldfusion.extensions:1.0.191910"/>
+		<item value="com.adobe.flexbuilder.feature.core.osx:3.0.214193"/>
+		<item value="com.adobe.flexbuilder.feature.standalone.osx:3.0.214193"/>
+		<item value="com.interaktonline.jseclipse:1.5.5"/>
+		<item value="org.eclipse.cvs:1.0.2.r33x_r20080129-7C79_B_GLJwq3I9ZCD8L_"/>
+		<item value="org.eclipse.platform:3.3.3.r33x_r20080129-_19UEl7Ezk_gXF1kouft"/>
+		<item value="org.eclipse.rcp:3.3.3.r33x_r20080129-8y8eE9UEUWI6qujeED0xT7bc"/>
+	</list>
+	<section name="ResourceNavigator">
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value=""/>
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+	</section>
+	<section name="org.eclipse.ui.views.problem">
+	</section>
+</section>

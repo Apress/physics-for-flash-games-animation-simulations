@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/BallThrow.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEBUG_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch3/BallThrow/bin-debug/BallThrow.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROFILE_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch3/BallThrow/bin-debug/BallThrow.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="BallThrow"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch3/BallThrow/bin-debug/BallThrow.swf"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BallThrow"/>
+<listEntry value="/BallThrow/src/BallThrow.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

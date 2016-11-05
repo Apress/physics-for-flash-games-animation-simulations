@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/Molecules2.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEBUG_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/Molecules2/bin-debug/Molecules2.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROFILE_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/Molecules2/bin-debug/Molecules2.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="Molecules2"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/Molecules2/bin-debug/Molecules2.swf"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Molecules2"/>
+<listEntry value="/Molecules2/src/Molecules2.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

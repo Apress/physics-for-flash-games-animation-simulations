@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/BouncingBall3D.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEBUG_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch2/BouncingBall3D/bin-debug/BouncingBall3D.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROFILE_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch2/BouncingBall3D/bin-debug/BouncingBall3D.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="BouncingBall3D"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch2/BouncingBall3D/bin-debug/BouncingBall3D.swf"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BouncingBall3D"/>
+<listEntry value="/BouncingBall3D/src/BouncingBall3D.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

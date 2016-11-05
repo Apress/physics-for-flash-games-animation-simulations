@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/Test3DObjects.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEBUG_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch15/Test3DObjects/bin-debug/Test3DObjects.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROFILE_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch15/Test3DObjects/bin-debug/Test3DObjects.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="Test3DObjects"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch15/Test3DObjects/bin-debug/Test3DObjects.swf"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Test3DObjects"/>
+<listEntry value="/Test3DObjects/src/Test3DObjects.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

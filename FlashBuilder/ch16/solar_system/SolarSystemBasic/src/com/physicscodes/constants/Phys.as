@@ -1,0 +1,1 @@
+﻿package com.physicscodes.constants{	public class Phys {		public static const GRAVITATIONAL_CONSTANT:Number = 6.67384E-11;				public static const STANDARD_GRAVITY:Number = 9.80665;				public static const SPEED_OF_LIGHT:Number = 299792458; // in vacuum	}}

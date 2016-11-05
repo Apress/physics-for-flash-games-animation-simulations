@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/BouncingOffInclinedWall2.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_DEBUG_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/BouncingOffInclinedWall2/bin-debug/BouncingOffInclinedWall2.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROFILE_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/BouncingOffInclinedWall2/bin-debug/BouncingOffInclinedWall2.swf"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="BouncingOffInclinedWall2"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/om/Documents/FlashBuilderAS3Book/ch11/BouncingOffInclinedWall2/bin-debug/BouncingOffInclinedWall2.swf"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BouncingOffInclinedWall2"/>
+<listEntry value="/BouncingOffInclinedWall2/src/BouncingOffInclinedWall2.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>
